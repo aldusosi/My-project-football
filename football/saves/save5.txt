@@ -1,0 +1,143 @@
+function preload() {
+  logoImg = loadImage('image/logo-my-clube.png');
+  peneiraImg = loadImage('image/peneira.png')
+  menuImg = loadImage('image/menu.png');
+}
+
+var W = 400;
+var H = 400;
+
+var BemVindo = false;
+var Logo = false;
+var Peneira = false;
+var Menu = true;
+
+var seleBemX = 0;
+var seleLogoX = 0;
+var selePeneX = 0;
+var selMenuX = 25;
+var selMenuY = 13;
+var seletorY = 375;
+
+function setup() {
+  createCanvas(W,H);
+}
+// Exibe mensagem de bem vindo
+function bemVindo(){
+  if(BemVindo){
+    background(3, 153, 23);
+    color(255,255,255);
+    text("Ola! seja bem vindo.", 25,20);
+    
+    
+    text("desejas continuar?",0,350)
+    textSize(20)
+    rect(seleBemX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      seleBemX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      seleBemX = 100;
+    }
+    if(seleBemX == 100 && keyCode === ENTER){
+      BemVindo = false;
+      Logo = true;
+    }
+  }
+}
+//exibe logo e uma breve história
+function logo(){
+  if(Logo){
+    background(0,0,0);
+    image(logoImg,0,0)
+    
+    text("desejas continuar?",0,350)
+    textSize(20)
+    rect(seleLogoX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      seleLogoX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      seleLogoX = 100;
+    }
+    if(seleLogoX == 100 && keyCode === ENTER){
+      Logo = false;
+      Peneira = true;
+    }
+  }
+}
+//fala sobre peneira e recrutar jogadores
+function peneira(){
+  if(Peneira){
+    background(3, 153, 23);
+    color(255,255,255);
+    image(peneiraImg,0,0);
+    
+    
+    text("Ir para o escritório?",0,350)
+    textSize(20)
+    rect(selePeneX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      selePeneX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      selePeneX = 100;
+    }
+    if(selePeneX == 100 && keyCode === ENTER){
+      Peneira = false;
+      Menu = true;
+    }
+  }
+}
+//menu do jogo
+function menu(){
+  if(Menu){
+    background(0,0,0);
+    image(menuImg,0,0)
+    
+    c = color('rgba(0, 150, 150,0.5)');
+    fill(c)
+    rect(selMenuX,selMenuY,111,85);
+    color(255,255,255)
+    text(selMenuX,200,350)
+    text(selMenuY,200,375)
+    
+    
+    /*
+    text("desejas continuar?",0,350)
+    textSize(20)
+    rect(seleMenuX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      seleMenuX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      seleMenuX = 100;
+    }
+    if(seleMenuX == 100 && keyCode === ENTER){
+      Menu = false;
+    }*/
+  }
+}
+
+function draw() {
+  bemVindo();
+  logo();
+  peneira();
+  menu();
+}

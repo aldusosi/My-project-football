@@ -1,0 +1,75 @@
+function preload(){
+  logoImg = loadImage('image/logo.png');
+  peneiraImg = loadImage('image/peneira.png');
+  menuImg = loadImage('image/menu.png');
+}
+
+var tela = 3;
+var selX = 25;
+var selY = 30;
+
+var linha = 1;
+var coluna = 1;
+
+var W=400, H=400;
+function setup() {
+  createCanvas(W,H);
+}
+
+function draw() {
+  background(163, 174, 191)
+  
+  if(tela == 1){
+    logo();
+  }if(tela == 2){
+    peneira();
+  }if(tela == 3){
+    menu();
+  }
+  text(linha,200,400);
+  text(coluna,200,375);
+}
+
+function logo(){
+  image(logoImg,0,0);
+}
+
+function peneira(){
+  image(peneiraImg,0,0);
+}
+
+function menu(){
+  image(menuImg,0,0);
+  
+  //SELETOR
+  c = color("rgba(4, 86, 212, 0.7)");
+  fill(c);
+  rect(selX,selY,111,85);
+}
+
+function keyPressed(){
+  if(keyCode == ENTER){
+    tela+=1;
+    if(tela > 3){
+      tela = 3;
+    }
+  }
+  
+  if(keyCode == LEFT_ARROW && selX >25){
+    selX = selX - 120;
+    coluna--;
+  }
+  if(keyCode == RIGHT_ARROW && selX <2*120){
+    selX = selX + 120;
+    coluna++;
+  }
+  if(keyCode == UP_ARROW && selY > 30){
+    selY = selY - 92
+    linha--;
+  }
+  if(keyCode == DOWN_ARROW && selY < 2*92){
+    selY = selY + 92;
+    linha++;
+  }
+  
+}

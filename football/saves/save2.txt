@@ -1,0 +1,72 @@
+function preload() {
+  logoImg = loadImage('image/logo-my-clube.png');
+}
+
+var W = 400;
+var H = 400;
+
+var BemVindo = true;
+var Logo = false;
+var seleBemX = 0;
+var seleLogoX = 0;
+var seletorY = 375;
+
+function setup() {
+  createCanvas(W,H);
+}
+
+function bemVindo(){
+  if(BemVindo){
+    background(3, 153, 23);
+    color(255,255,255);
+    text("Ola! seja bem vindo.", 25,20);
+    
+    
+    text("desejas continuar?",0,350)
+    textSize(20)
+    rect(seleBemX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      seleBemX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      seleBemX = 100;
+    }
+    if(seleBemX == 100 && keyCode === ENTER){
+      BemVindo = false;
+      Logo = true;
+    }
+  }
+}
+
+function logo(){
+  if(Logo){
+    background(0,0,0);
+    image(logoImg,0,0)
+    
+    text("desejas continuar?",0,350)
+    textSize(20)
+    rect(seleLogoX,seletorY,50,25); // Seletor da tela Bem Vindo
+    text("não",50,400);
+    //rect(100,375,50,25)
+    text("sim",150,400);
+    
+    if(keyCode === LEFT_ARROW){
+      seleLogoX = 0;
+    }
+    if(keyCode === RIGHT_ARROW){
+      seleLogoX = 100;
+    }
+    if(seleLogoX == 100 && keyCode === ENTER){
+      Logo = false;
+    }
+  }
+}
+
+function draw() {
+  bemVindo();
+  logo();
+}
