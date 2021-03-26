@@ -6,8 +6,6 @@ function preload(){
   stadiumAt1= loadImage('image/stadium-atualizado1.png');
   stadiumAt2= loadImage('image/stadium-atualizado2.png');
   finacasImg= loadImage('image/bank.png');
-  calendarioImg = loadImage('image/calendario.png')
-  seletorCalendario = loadImage('image/seletor-calendario.png')
 }
 
 //finanças---------------
@@ -17,14 +15,6 @@ var caixa = 20000;
 var semGrana = false;
 var atualizar = [1000,10000,20000];
 var stadiumAtual = 0;
-var temDezesseis = false;
-
-//calendário
-var campeonatos = false;
-var peneiras = false;
-var calX = 139;
-var calY = 264;
-var semJogadores = false;
 
 var tela = 3;
 var telaMenu = 0;
@@ -53,10 +43,7 @@ function draw() {
     stadium();
   }if(telaMenu == 2){
     financas();
-  }if(telaMenu == 3){
-    calendario();
   }
-  text(calX,200,200)
 
 }
 
@@ -112,32 +99,6 @@ function financas(){
   text(`CAIXA: ${caixa} reais`,50,150);
 }
 
-function calendario(){
-  
-  image(calendarioImg,0,0);
-  if(!campeonatos){
-    textSize(12);
-    fill(0,0,0)
-    text(`Você ainda não está inscrito em competições.`,75,125,100,100);
-  }
-  if(!peneiras){
-    textSize(12);
-    fill(0,0,0)
-    text(`Sem nenhuma peneira marcada.`,207,125,100,100);
-  }
-  if(telaMenu == 3){
-    image(seletorCalendario,calX,calY);
-    textAlign(CENTER)
-    textSize(14)
-    text("Mova direcionais para escolher e SHIFT para selecionar.",200,395);
-  }
-  if(semJogadores){
-    c = color(255,0,0);
-    fill(c);
-    text("Seu clube não possue o minimo de 16 jogadores.",200,375);
-  }
-}
-
 function keyPressed(){
   if(keyCode == ENTER){
     tela+=1;
@@ -176,28 +137,9 @@ function keyPressed(){
     contStart++;
     
   }
-  if(linha == 1 && coluna == 3 && keyCode == ENTER && tela == 3){//ENTRA NA SEÇÃO CALENDÁRIO
-    telaMenu = 3;
-    contStart++;
-  }
-  if(keyCode == LEFT_ARROW && telaMenu == 3 && calX >139){//MOVE SELETOR DO CALENDÁRIO
-    calX -= 190;
-  }
-  if(keyCode == RIGHT_ARROW && telaMenu == 3 && calX < 139+190){//MOVE SELETOR DO CALENDÁRIO
-    calX += 190;
-    semJogadores = false;
-  }
-  if(telaMenu == 3 && keyCode == SHIFT && calX == 139){//VERIFICA SE TEM JOGADORES SUFICIENTES PARA INSCREVER NA COMPETIÇÃO
-    if (temDezesseis){
-      //------------------------------VALIDE A PARTICIPAÇÃO EM CAMPEONATOS AQUI----------------------------------------
-    }else{
-      semJogadores = true;
-    }
-  }
   if(keyCode == ESCAPE){//VOLTA PARA MENU
       telaMenu = 0;
       semGrana = false;
-      semJogadores = false;
   }
   if(keyCode == SHIFT && telaMenu == 1 && caixa >= atualizar[stadiumAtual]){
     semGrana = false;
