@@ -8,7 +8,6 @@ function preload(){
   finacasImg= loadImage('image/bank.png');
   calendarioImg = loadImage('image/calendario.png')
   seletorCalendario = loadImage('image/seletor-calendario.png')
-  esquemaImg = [loadImage('image/esquema-3-4-3.png'),loadImage('image/esquema-3-5-2.png'),loadImage('image/esquema-4-4-2.png'),loadImage('image/esquema-4-3-3.png'),loadImage('image/esquema-4-5-1.png'),loadImage('image/esquema-4-4-2.png'),loadImage('image/esquema-5-4-1.png')];
 }
 
 //finanças---------------
@@ -30,7 +29,7 @@ var organizarPeneira = false;
 var quantidadeDePeneiras = 0;
 
 var tela = 3;
-var telaMenu = 0;
+var telaMenu = 3;
 var selX = 25;
 var selY = 30;
 var contStart = 0; //controle para que não entre em stadium antes da hora.
@@ -58,9 +57,8 @@ function draw() {
     financas();
   }if(telaMenu == 3){
     calendario();
-  }if(telaMenu == 4){
-    elenco();
   }
+  text(quantidadeDePeneiras,200,200)
 
 }
 
@@ -118,7 +116,7 @@ function financas(){
 }
 
 function calendario(){
-  var i=0;
+  
   image(calendarioImg,0,0);
   if(!campeonatos){
     textSize(12);
@@ -142,34 +140,15 @@ function calendario(){
     fill(c);
     text("Seu clube não possue o minimo de 16 jogadores.",200,375);
   }
-  if(organizarPeneira){    
-    quantidadeDePeneiras = prompt("Quantas peneiras deseja ralizar esse més? insira no maximo 10 peneiras");
-    if(quantidadeDePeneiras <=10){
-      if(quantidadeDePeneiras === null){//CASO A PESSOA SAIA SEM DEFINIR UM VALOR O PROGRAMA TRAVA (ESSE IF CONCERTA)
-      quantidadeDePeneiras = 0;
-      }else{
-        peneiras = true;
-      }
-      
-    }else{
+  if(organizarPeneira){
+    text("organizou",200,200)    
+    quantidadeDePeneiras = prompt("Quantas peneiras deseja ralizar esse més?");
+    if(quantidadeDePeneiras === null){//CASO A PESSOA SAIA SEM DEFINIR UM VALOR O PROGRAMA TRAVA (ESSE IF CONCERTA)
       quantidadeDePeneiras = 0;
     }
-    
     textSize(12);
     organizarPeneira = false;
   }
-  if(quantidadeDePeneiras !== 0){
-    if(i <= quantidadeDePeneiras){
-      fill(0,0,0);
-      textAlign(LEFT)
-      text(`Peneiras a serem realizadas: ${quantidadeDePeneiras}`,207,122,125,140);
-      i++;
-    }
-  }
-}
-
-function elenco (){
-  image(esquemaImg[2],0,0);
 }
 
 function keyPressed(){
@@ -214,9 +193,6 @@ function keyPressed(){
     telaMenu = 3;
     contStart++;
   }
-  if(linha == 2 && coluna == 1 && keyCode == ENTER && tela == 3){
-    telaMenu = 4;
-  }
   if(keyCode == LEFT_ARROW && telaMenu == 3 && calX >139){//MOVE SELETOR DO CALENDÁRIO
     calX -= 190;
   }
@@ -231,11 +207,8 @@ function keyPressed(){
       semJogadores = true;
     }
   }
-  if(telaMenu == 3 && keyCode == SHIFT && calX == 329 ){//SERVE PARA JOGADOR ORGANIZAR TOTAL DE PENEIRAS
-    if(quantidadeDePeneiras === 0){// QUANDO TODAS AS PENIRAS ACABAR DEVE SE ZERAR O VALOR DE QTD DE PENEIRA.
-      organizarPeneira = true;
-    }
-    
+  if(telaMenu == 3 && keyCode == SHIFT && calX == 329){//SERVE PARA JOGADOR ORGANIZAR TOTAL DE PENEIRAS
+    organizarPeneira = true;
   }
   if(keyCode == ESCAPE){//VOLTA PARA MENU
       telaMenu = 0;
@@ -248,8 +221,6 @@ function keyPressed(){
     console.log(caixa);
     stadiumAtual++;
   }
-  if(keyCode == SHIFT && telaMenu == 1 && caixa < atualizar[stadiumAtual]){
+  if(keyCode == SHIFT && telaMenu == 1 && caixa < atualizar[stadiumAtual])
     semGrana = true;
-    
-  }
 }
