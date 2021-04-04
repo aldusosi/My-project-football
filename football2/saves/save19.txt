@@ -591,7 +591,6 @@ var lucca = {
   posicaoMenu:379,
 }
 var goleiros = [];
-var zagueiros = [];
 var jogadoresPeneira1 =[miguel,davi,arthur,pedro,gabriel,bernardo,lucas,matheus,rafael,heitor,enzo,guilherme,nicolas,lorenzo,gustavo,felipe,samuel,joaoPedro,daniel,victor,leonardo,
 henrrique,theo,murilo,eduardo,pedroHenrrique,pietro,caua,isac,caio,vinicius,benjamin,joao,lucca];
 var jogadoresDaPeneira1 = [miguel.nome, davi.nome, arthur.nome, pedro.nome, gabriel.nome, 
@@ -642,12 +641,11 @@ function draw() {
   }if(telaMenu == 4){
     elenco();
   }
-  textSize(5)
+  textSize(9)
   fill(0,0,0)
   text(selPerfilX,200,200);
   text(elencoY,200,250);
-  text(goleiros,0,300);
-  text(zagueiros,0,350);
+  text(goleiros,200,300);
 }
 
 function logo(){
@@ -1410,56 +1408,23 @@ function keyPressed(){
     if(keyCode == SHIFT && contagem < 3)
     contagem ++//contador de shift dentro do adiconar peneira
     for(var jogador of jogadoresPeneira1){
-      if(jogador.posicaoMenu == elencoY && contagem >= 2 && goleiros.length < 2 && jogador.posicao != "GK"){
+      if(jogador.posicaoMenu == elencoY && contagem >=2 && goleiros.length <2){
         jogador.posicao = "GK"
         goleiros.push(jogador);
-        for(player of zagueiros){ // remove o jogador caso esteja entre os defensores
-          if(player == jogador){
-            index = zagueiros.indexOf(jogador);
-            zagueiros.splice(index, index+1);
-            console.log(zagueiros)
-          }
-        }
         
         contagem = 1;
-      }else if(jogador.posicaoMenu == elencoY && contagem >=2 && goleiros.length == 2 && jogador.posicao != "GK"){
-          jogador.posicao = "GK";
+      }else if(jogador.posicaoMenu == elencoY && contagem >=2 && goleiros.length == 2){
+          jogador.posicao = "GK"
           goleiros.shift();
           goleiros.push(jogador);
-          for(player of zagueiros){ // remove o jogador caso esteja entre os defensores
-          if(player == jogador){
-            index = zagueiros.indexOf(jogador);
-            zagueiros.splice(index, index+1);
-            console.log(zagueiros)
-          }
-        }
+          console.log(goleiros)
         }
     }
   }
-  if(keyCode == SHIFT && perfilDoJogador && selPerfilX == 192  ){  //AICIONA JOGADORES A POSIÇÃO DE DEFENSORES
+  if(keyCode == SHIFT && perfilDoJogador && selPerfilX == 192 ){  //AICIONA JOGADORES A POSIÇÃO DE DEFENSORES
     for(var jogador of jogadoresPeneira1){
-      if(jogador.posicaoMenu == elencoY && zagueiros.length < 6 && jogador.posicao != "DF"){
+      if(jogador.posicaoMenu == elencoY  ){
         jogador.posicao = "DF";
-        zagueiros.push(jogador);
-        for(player of goleiros){ // remove o jogador caso esteja entre os goleiros
-          if(player == jogador){
-            index = goleiros.indexOf(jogador);
-            goleiros.splice(index, index+1);
-            console.log(goleiros)
-          }
-        }
-      }else if(jogador.posicaoMenu == elencoY && zagueiros.length == 6 && jogador.posicao != "DF"){
-        jogador.posicao = "DF";
-        zagueiros.shift();
-        zagueiros.push(jogador);
-        console.log(zagueiros);
-        for(player of goleiros){ // remove o jogador caso esteja entre os goleiros
-          if(player == jogador){
-            index = goleiros.indexOf(jogador);
-            goleiros.splice(index, index+1);
-            console.log(goleiros)
-          }
-        }
       }
     }
   }
@@ -1476,3 +1441,5 @@ function keyPressed(){
   }
   
 }
+
+// LEMBRAR DE REMOVER JOGADORES DA POSIÇÃO ATUAL AO ADICIONA-LOS A OUTRA POSIÇÃO (feito para goleiros e zagueiros).

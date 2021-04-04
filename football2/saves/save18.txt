@@ -44,7 +44,6 @@ var semJogadores = false;
 var organizarPeneira = false;
 var quantidadeDePeneiras = 0;
 
-
 //jogadoreselenco
 var miguel = {
   nome:"Miguel",
@@ -76,7 +75,7 @@ var davi = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:59,
+  posicaoMenu:49,
 }
 var arthur = {
   nome:"Arthur",
@@ -92,7 +91,7 @@ var arthur = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:69,
+  posicaoMenu:49,
 }
 var pedro = {
   nome:"Pedro",
@@ -108,7 +107,7 @@ var pedro = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:79,
+  posicaoMenu:49,
 }
 var gabriel = {
   nome:"Gabriel",
@@ -124,7 +123,7 @@ var gabriel = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:89,
+  posicaoMenu:49,
 }
 var bernardo = {
   nome:"Bernardo",
@@ -140,7 +139,7 @@ var bernardo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:99,
+  posicaoMenu:49,
 }
 var lucas = {
   nome:"Lucas",
@@ -156,7 +155,7 @@ var lucas = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:109,
+  posicaoMenu:49,
 }
 var matheus = {
   nome:"Matheus",
@@ -172,7 +171,7 @@ var matheus = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:119,
+  posicaoMenu:49,
 }
 var rafael = {
   nome:"Rafael",
@@ -188,7 +187,7 @@ var rafael = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:129,
+  posicaoMenu:49,
 }
 var heitor = {
   nome:"Heitor",
@@ -204,7 +203,7 @@ var heitor = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:139,
+  posicaoMenu:49,
 }
 var enzo = {
   nome:"Enzo",
@@ -220,7 +219,7 @@ var enzo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:149,
+  posicaoMenu:49,
 }
 var guilherme = {
   nome:"Guilherme",
@@ -236,7 +235,7 @@ var guilherme = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:159,
+  posicaoMenu:49,
 }
 var nicolas = {
   nome:"Nicolas",
@@ -252,7 +251,7 @@ var nicolas = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:169,
+  posicaoMenu:49,
 }
 var lorenzo = {
   nome:"Lorenzo",
@@ -268,7 +267,7 @@ var lorenzo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:179,
+  posicaoMenu:49,
 }
 var gustavo = {
   nome:"Gustavo",
@@ -284,7 +283,7 @@ var gustavo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:189,
+  posicaoMenu:49,
 }
 var felipe = {
   nome:"Felipe",
@@ -300,7 +299,7 @@ var felipe = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:199,
+  posicaoMenu:49,
 }
 var samuel = {
   nome:"Samuel",
@@ -316,7 +315,7 @@ var samuel = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:209,
+  posicaoMenu:49,
 }
 var joaoPedro = {
   nome:"João Pedro",
@@ -332,7 +331,7 @@ var joaoPedro = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:219,
+  posicaoMenu:49,
 }
 var daniel = {
   nome:"Daniel",
@@ -348,7 +347,7 @@ var daniel = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:229,
+  posicaoMenu:49,
 }
 var victor = {
   nome:"Victor",
@@ -364,7 +363,7 @@ var victor = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:239,
+  posicaoMenu:49,
 }
 var leonardo = {
   nome:"Leonardo",
@@ -380,7 +379,7 @@ var leonardo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:249,
+  posicaoMenu:49,
 }
 var henrrique = {
   nome:"Henrrique",
@@ -396,7 +395,7 @@ var henrrique = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:259,
+  posicaoMenu:49,
 }
 var theo = {
   nome:"Theo",
@@ -412,7 +411,7 @@ var theo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:269,
+  posicaoMenu:49,
 }
 var murilo = {
   nome:"Murilo",
@@ -428,7 +427,7 @@ var murilo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:279,
+  posicaoMenu:49,
 }
 var eduardo = {
   nome:"Eduardo",
@@ -444,7 +443,7 @@ var eduardo = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:289,
+  posicaoMenu:49,
 }
 var pedroHenrrique = {
   nome:"Pedro Henrrique",
@@ -460,7 +459,7 @@ var pedroHenrrique = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:299,
+  posicaoMenu:49,
 }
 var pietro = {
   nome:"Pietro",
@@ -476,7 +475,7 @@ var pietro = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:309,
+  posicaoMenu:49,
 }
 var caua = {
   nome:"Cauã",
@@ -492,7 +491,7 @@ var caua = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:319,
+  posicaoMenu:49,
 }
 var isac = {
   nome:"Isac",
@@ -508,7 +507,7 @@ var isac = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:329,
+  posicaoMenu:49,
 }
 var caio = {
   nome:"Caio",
@@ -524,7 +523,7 @@ var caio = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:339,
+  posicaoMenu:49,
 }
 var vinicius = {
   nome:"Vinícius",
@@ -540,7 +539,7 @@ var vinicius = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:349,
+  posicaoMenu:49,
 }
 var benjamin = {
   nome:"Benjamin",
@@ -556,7 +555,7 @@ var benjamin = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:359,
+  posicaoMenu:49,
 }
 var joao = {
   nome:"João",
@@ -572,7 +571,7 @@ var joao = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:369,
+  posicaoMenu:49,
 }
 var lucca = {
   nome:"Lucca",
@@ -588,10 +587,8 @@ var lucca = {
   cartoesAmarelos:0,
   cartoesVermelhos:0,
   contusao:0,
-  posicaoMenu:379,
+  posicaoMenu:49,
 }
-var goleiros = [];
-var zagueiros = [];
 var jogadoresPeneira1 =[miguel,davi,arthur,pedro,gabriel,bernardo,lucas,matheus,rafael,heitor,enzo,guilherme,nicolas,lorenzo,gustavo,felipe,samuel,joaoPedro,daniel,victor,leonardo,
 henrrique,theo,murilo,eduardo,pedroHenrrique,pietro,caua,isac,caio,vinicius,benjamin,joao,lucca];
 var jogadoresDaPeneira1 = [miguel.nome, davi.nome, arthur.nome, pedro.nome, gabriel.nome, 
@@ -608,7 +605,6 @@ var selPerfilX = 81;
 var selPerfilY = 306;
 var contShift = 0;
 var perfilDoJogador = false;
-var contagem = 0;
 
 var tela = 3;
 var telaMenu = 4;
@@ -642,12 +638,7 @@ function draw() {
   }if(telaMenu == 4){
     elenco();
   }
-  textSize(5)
-  fill(0,0,0)
   text(selPerfilX,200,200);
-  text(elencoY,200,250);
-  text(goleiros,0,300);
-  text(zagueiros,0,350);
 }
 
 function logo(){
@@ -761,6 +752,7 @@ function elenco (){
   fill(107, 50, 168)
   rect(elencoX,elencoY,169,11)//SELETOR PENEIRA
   fill(0,0,0)
+  text(elencoY,200,200)
   while(cont < jogadoresDaPeneira1.length){//INSERE TODOS OS NOMES DE JOGADORES DA PENEIRA!
     textSize(9);
     textAlign(LEFT)
@@ -795,9 +787,6 @@ function elenco (){
     text(jogadoresPeneira1[1].posicao,255,188);
     text(jogadoresPeneira1[1].personalidade,285,204);
     text(jogadoresPeneira1[1].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 69 && perfilDoJogador){
     image(jogadoresImg[2],32,76);
@@ -810,9 +799,6 @@ function elenco (){
     text(jogadoresPeneira1[2].posicao,255,188);
     text(jogadoresPeneira1[2].personalidade,285,204);
     text(jogadoresPeneira1[2].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 79 && perfilDoJogador){
     image(jogadoresImg[3],32,76);
@@ -825,9 +811,6 @@ function elenco (){
     text(jogadoresPeneira1[3].posicao,255,188);
     text(jogadoresPeneira1[3].personalidade,285,204);
     text(jogadoresPeneira1[3].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 89 && perfilDoJogador){
     image(jogadoresImg[4],32,76);
@@ -840,9 +823,6 @@ function elenco (){
     text(jogadoresPeneira1[4].posicao,255,188);
     text(jogadoresPeneira1[4].personalidade,285,204);
     text(jogadoresPeneira1[4].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 99 && perfilDoJogador){
     image(jogadoresImg[5],32,76);
@@ -855,9 +835,6 @@ function elenco (){
     text(jogadoresPeneira1[5].posicao,255,188);
     text(jogadoresPeneira1[5].personalidade,285,204);
     text(jogadoresPeneira1[5].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 109 && perfilDoJogador){
     image(jogadoresImg[6],32,76);
@@ -870,9 +847,6 @@ function elenco (){
     text(jogadoresPeneira1[6].posicao,255,188);
     text(jogadoresPeneira1[6].personalidade,285,204);
     text(jogadoresPeneira1[6].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 119 && perfilDoJogador){
     image(jogadoresImg[7],32,76);
@@ -885,9 +859,6 @@ function elenco (){
     text(jogadoresPeneira1[7].posicao,255,188);
     text(jogadoresPeneira1[7].personalidade,285,204);
     text(jogadoresPeneira1[7].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 129 && perfilDoJogador){
     image(jogadoresImg[8],32,76);
@@ -900,9 +871,6 @@ function elenco (){
     text(jogadoresPeneira1[8].posicao,255,188);
     text(jogadoresPeneira1[8].personalidade,285,204);
     text(jogadoresPeneira1[8].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 139 && perfilDoJogador){
     image(jogadoresImg[9],32,76);
@@ -915,9 +883,6 @@ function elenco (){
     text(jogadoresPeneira1[9].posicao,255,188);
     text(jogadoresPeneira1[9].personalidade,285,204);
     text(jogadoresPeneira1[9].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 149 && perfilDoJogador){
     image(jogadoresImg[10],32,76);
@@ -930,9 +895,6 @@ function elenco (){
     text(jogadoresPeneira1[10].posicao,255,188);
     text(jogadoresPeneira1[10].personalidade,285,204);
     text(jogadoresPeneira1[10].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 159 && perfilDoJogador){
     image(jogadoresImg[11],32,76);
@@ -945,9 +907,6 @@ function elenco (){
     text(jogadoresPeneira1[11].posicao,255,188);
     text(jogadoresPeneira1[11].personalidade,285,204);
     text(jogadoresPeneira1[11].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 169 && perfilDoJogador){
     image(jogadoresImg[12],32,76);
@@ -960,9 +919,6 @@ function elenco (){
     text(jogadoresPeneira1[12].posicao,255,188);
     text(jogadoresPeneira1[12].personalidade,285,204);
     text(jogadoresPeneira1[12].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 179 && perfilDoJogador){
     image(jogadoresImg[13],32,76);
@@ -975,9 +931,6 @@ function elenco (){
     text(jogadoresPeneira1[13].posicao,255,188);
     text(jogadoresPeneira1[13].personalidade,285,204);
     text(jogadoresPeneira1[13].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 189 && perfilDoJogador){
     image(jogadoresImg[14],32,76);
@@ -990,9 +943,6 @@ function elenco (){
     text(jogadoresPeneira1[14].posicao,255,188);
     text(jogadoresPeneira1[14].personalidade,285,204);
     text(jogadoresPeneira1[14].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 199 && perfilDoJogador){
     image(jogadoresImg[15],32,76);
@@ -1005,9 +955,6 @@ function elenco (){
     text(jogadoresPeneira1[15].posicao,255,188);
     text(jogadoresPeneira1[15].personalidade,285,204);
     text(jogadoresPeneira1[15].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 209 && perfilDoJogador){
     image(jogadoresImg[16],32,76);
@@ -1020,9 +967,6 @@ function elenco (){
     text(jogadoresPeneira1[16].posicao,255,188);
     text(jogadoresPeneira1[16].personalidade,285,204);
     text(jogadoresPeneira1[16].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 219 && perfilDoJogador){
     image(jogadoresImg[17],32,76);
@@ -1035,9 +979,6 @@ function elenco (){
     text(jogadoresPeneira1[17].posicao,255,188);
     text(jogadoresPeneira1[17].personalidade,285,204);
     text(jogadoresPeneira1[17].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 229 && perfilDoJogador){
     image(jogadoresImg[18],32,76);
@@ -1050,9 +991,6 @@ function elenco (){
     text(jogadoresPeneira1[18].posicao,255,188);
     text(jogadoresPeneira1[18].personalidade,285,204);
     text(jogadoresPeneira1[18].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 239 && perfilDoJogador){
     image(jogadoresImg[19],32,76);
@@ -1065,9 +1003,6 @@ function elenco (){
     text(jogadoresPeneira1[19].posicao,255,188);
     text(jogadoresPeneira1[19].personalidade,285,204);
     text(jogadoresPeneira1[19].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 249 && perfilDoJogador){
     image(jogadoresImg[20],32,76);
@@ -1080,9 +1015,6 @@ function elenco (){
     text(jogadoresPeneira1[20].posicao,255,188);
     text(jogadoresPeneira1[20].personalidade,285,204);
     text(jogadoresPeneira1[20].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 259 && perfilDoJogador){
     image(jogadoresImg[21],32,76);
@@ -1095,9 +1027,6 @@ function elenco (){
     text(jogadoresPeneira1[21].posicao,255,188);
     text(jogadoresPeneira1[21].personalidade,285,204);
     text(jogadoresPeneira1[21].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 269 && perfilDoJogador){
     image(jogadoresImg[22],32,76);
@@ -1110,9 +1039,6 @@ function elenco (){
     text(jogadoresPeneira1[22].posicao,255,188);
     text(jogadoresPeneira1[22].personalidade,285,204);
     text(jogadoresPeneira1[22].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 279 && perfilDoJogador){
     image(jogadoresImg[23],32,76);
@@ -1125,9 +1051,6 @@ function elenco (){
     text(jogadoresPeneira1[23].posicao,255,188);
     text(jogadoresPeneira1[23].personalidade,285,204);
     text(jogadoresPeneira1[23].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 289 && perfilDoJogador){
     image(jogadoresImg[24],32,76);
@@ -1140,9 +1063,6 @@ function elenco (){
     text(jogadoresPeneira1[24].posicao,255,188);
     text(jogadoresPeneira1[24].personalidade,285,204);
     text(jogadoresPeneira1[24].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 299 && perfilDoJogador){
     image(jogadoresImg[25],32,76);
@@ -1155,9 +1075,6 @@ function elenco (){
     text(jogadoresPeneira1[25].posicao,255,188);
     text(jogadoresPeneira1[25].personalidade,285,204);
     text(jogadoresPeneira1[25].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 309 && perfilDoJogador){
     image(jogadoresImg[26],32,76);
@@ -1170,9 +1087,6 @@ function elenco (){
     text(jogadoresPeneira1[26].posicao,255,188);
     text(jogadoresPeneira1[26].personalidade,285,204);
     text(jogadoresPeneira1[26].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 319 && perfilDoJogador){
     image(jogadoresImg[27],32,76);
@@ -1185,9 +1099,6 @@ function elenco (){
     text(jogadoresPeneira1[27].posicao,255,188);
     text(jogadoresPeneira1[27].personalidade,285,204);
     text(jogadoresPeneira1[27].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 329 && perfilDoJogador){
     image(jogadoresImg[28],32,76);
@@ -1200,9 +1111,6 @@ function elenco (){
     text(jogadoresPeneira1[28].posicao,255,188);
     text(jogadoresPeneira1[28].personalidade,285,204);
     text(jogadoresPeneira1[28].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 339 && perfilDoJogador){
     image(jogadoresImg[29],32,76);
@@ -1215,9 +1123,6 @@ function elenco (){
     text(jogadoresPeneira1[29].posicao,255,188);
     text(jogadoresPeneira1[29].personalidade,285,204);
     text(jogadoresPeneira1[29].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 349 && perfilDoJogador){
     image(jogadoresImg[30],32,76);
@@ -1230,9 +1135,6 @@ function elenco (){
     text(jogadoresPeneira1[30].posicao,255,188);
     text(jogadoresPeneira1[30].personalidade,285,204);
     text(jogadoresPeneira1[30].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 359 && perfilDoJogador){
     image(jogadoresImg[31],32,76);
@@ -1245,9 +1147,6 @@ function elenco (){
     text(jogadoresPeneira1[31].posicao,255,188);
     text(jogadoresPeneira1[31].personalidade,285,204);
     text(jogadoresPeneira1[31].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 369 && perfilDoJogador){
     image(jogadoresImg[32],32,76);
@@ -1260,9 +1159,6 @@ function elenco (){
     text(jogadoresPeneira1[32].posicao,255,188);
     text(jogadoresPeneira1[32].personalidade,285,204);
     text(jogadoresPeneira1[32].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
   }
   if(elencoY == 379 && perfilDoJogador){
     image(jogadoresImg[33],32,76);
@@ -1275,9 +1171,6 @@ function elenco (){
     text(jogadoresPeneira1[33].posicao,255,188);
     text(jogadoresPeneira1[33].personalidade,285,204);
     text(jogadoresPeneira1[33].media,243,222);
-    
-    fill('rgba(21, 76, 94,0.7)')
-    rect(selPerfilX, selPerfilY,30,18,2);
     
   }
   
@@ -1326,7 +1219,6 @@ function keyPressed(){
     perfilDoJogador = false;
     selPerfilX = 81;
     contShift = 0;
-    contagem = 0;
   }
   //MOVIMNTOS PARA BAIXO
   if(keyCode == DOWN_ARROW && selY < 2*92 && telaMenu === 0){
@@ -1338,7 +1230,6 @@ function keyPressed(){
     perfilDoJogador = false;
     selPerfilX = 81;
     contShift = 0;
-    contagem = 0;
   }
   //-------------------------FIM DE MOVIMENTOS--------------------------------
   
@@ -1401,67 +1292,9 @@ function keyPressed(){
     perfilDoJogador = false;
     selPerfilX = 81
     contShift = 0;
-    contagem = 0;
   }
   if(keyCode == SHIFT && contShift == 2 && perfilDoJogador && selPerfilX == 81){
     selPerfilX = 154;
-  }
-  if(keyCode == SHIFT && perfilDoJogador && selPerfilX == 154 ){ //AICIONA JOGADORES A POSIÇÃO DE GOLEIRO
-    if(keyCode == SHIFT && contagem < 3)
-    contagem ++//contador de shift dentro do adiconar peneira
-    for(var jogador of jogadoresPeneira1){
-      if(jogador.posicaoMenu == elencoY && contagem >= 2 && goleiros.length < 2 && jogador.posicao != "GK"){
-        jogador.posicao = "GK"
-        goleiros.push(jogador);
-        for(player of zagueiros){ // remove o jogador caso esteja entre os defensores
-          if(player == jogador){
-            index = zagueiros.indexOf(jogador);
-            zagueiros.splice(index, index+1);
-            console.log(zagueiros)
-          }
-        }
-        
-        contagem = 1;
-      }else if(jogador.posicaoMenu == elencoY && contagem >=2 && goleiros.length == 2 && jogador.posicao != "GK"){
-          jogador.posicao = "GK";
-          goleiros.shift();
-          goleiros.push(jogador);
-          for(player of zagueiros){ // remove o jogador caso esteja entre os defensores
-          if(player == jogador){
-            index = zagueiros.indexOf(jogador);
-            zagueiros.splice(index, index+1);
-            console.log(zagueiros)
-          }
-        }
-        }
-    }
-  }
-  if(keyCode == SHIFT && perfilDoJogador && selPerfilX == 192  ){  //AICIONA JOGADORES A POSIÇÃO DE DEFENSORES
-    for(var jogador of jogadoresPeneira1){
-      if(jogador.posicaoMenu == elencoY && zagueiros.length < 6 && jogador.posicao != "DF"){
-        jogador.posicao = "DF";
-        zagueiros.push(jogador);
-        for(player of goleiros){ // remove o jogador caso esteja entre os goleiros
-          if(player == jogador){
-            index = goleiros.indexOf(jogador);
-            goleiros.splice(index, index+1);
-            console.log(goleiros)
-          }
-        }
-      }else if(jogador.posicaoMenu == elencoY && zagueiros.length == 6 && jogador.posicao != "DF"){
-        jogador.posicao = "DF";
-        zagueiros.shift();
-        zagueiros.push(jogador);
-        console.log(zagueiros);
-        for(player of goleiros){ // remove o jogador caso esteja entre os goleiros
-          if(player == jogador){
-            index = goleiros.indexOf(jogador);
-            goleiros.splice(index, index+1);
-            console.log(goleiros)
-          }
-        }
-      }
-    }
   }
   if(keyCode == ESCAPE && !perfilDoJogador ){//VOLTA PARA MENU
       telaMenu = 0;
@@ -1471,7 +1304,6 @@ function keyPressed(){
   if(keyCode == ESCAPE && perfilDoJogador == true){//VOLTA PARA MENU
       perfilDoJogador = false;
       contShift = 0;
-      contagem = 0;  //contador de shift dentro do adiconar peneira
       selPerfilX = 81;
   }
   
