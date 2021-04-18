@@ -10,6 +10,8 @@ function preload() {
   seletorCalendario = loadImage('image/seletor-calendario.png');
   minOf = loadImage('image/minOf.png');
   minOn = loadImage('image/minOn.png');
+  trofeuInicio = loadImage('image/trofeu-inicio.png');
+  trofeuInicioWhite = loadImage('image/trofeu-inicio-white.png');
   esquemaImg = [loadImage('image/esquema-3-4-3.png'), loadImage('image/esquema-3-5-2.png'),
     loadImage('image/esquema-4-4-2.png'), loadImage('image/esquema-4-3-3.png'), loadImage('image/esquema-4-5-1.png'),
     loadImage('image/esquema-4-5-1.png'), loadImage('image/esquema-5-4-1.png')
@@ -634,11 +636,16 @@ var W = 400,
 
 function setup() {
   createCanvas(W, H);
+  var segundos = second();
+}
+
+function timer(){
+  segundos = second()
 }
 
 function draw() {
   background(163, 174, 191)
-
+  timer();
   if (tela == 1) {
     logo();
   }
@@ -660,19 +667,33 @@ function draw() {
   if (telaMenu == 4) {
     elenco();
   }
-  fill(0, 0, 0)
-  text(selPerfilX, 200, 200);
-  text(elencoY, 200, 250);
+  //fill(0, 0, 0)
+  
+
+  //text(elencoY, 200, 250);
   //text(meias,0,300);
   //text(zagueiros,0,350);
+  
 }
 
 function logo() {
   image(logoImg, 0, 0);
+  
+    if(segundos % 2 == 0){
+      image(trofeuInicioWhite,330,355);
+    }else{
+      image(trofeuInicio,355,355);
+    }
 }
 
 function peneira() {
   image(peneiraImg, 0, 0);
+  
+    if(segundos % 2 == 0){
+      image(trofeuInicioWhite,330,355);
+    }else{
+      image(trofeuInicio,355,355);
+    }
 }
 
 function menu() {
@@ -685,6 +706,12 @@ function menu() {
   fill(c);
   noStroke();
   rect(selX, selY, 112, 85, 10);
+  
+  if(segundos % 2 == 0){
+    image(trofeuInicioWhite,355,355);
+  }else{
+    image(trofeuInicio,355,355);
+  }
 }
 
 function stadium() {
@@ -700,12 +727,14 @@ function stadium() {
     image(stadiumAt2, 0, 0)
   }
   if (semGrana) {
+    textSize(14)
     textAlign(CENTER)
     c = color(255, 0, 0);
     fill(c);
     text("GRANA INSUFICIENTE PARA PROXIMA ATUALIZAÇÃO!", 200, 335);
   }
   c = color(0, 0, 0);
+  textSize(14)
   fill(c)
   textAlign(CENTER);
   text(`proxima atualização custa: ${atualizar[stadiumAtual]} reais `, 200, 375);
@@ -716,6 +745,7 @@ function stadium() {
 function financas() {
   textAlign(LEFT)
   c = color(31, 46, 209);
+  textSize(14)
   fill(c);
   image(finacasImg, 0, 0);
   text(`CAIXA: ${caixa} reais`, 50, 150);
