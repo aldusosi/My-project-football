@@ -1,127 +1,127 @@
-function preload(){
-  logoImg = loadImage('image/logo.png');
-  peneiraImg = loadImage('image/peneira.png');
-  menuImg = loadImage('image/menu.png');
-  stadiumImg= loadImage('image/stadium.png');
-  stadiumAt1= loadImage('image/stadium-atualizado1.png');
-  stadiumAt2= loadImage('image/stadium-atualizado2.png');
-}
+//preload
 
 //finanças---------------
 var caixa = 20000;
 
 //stadium-------------
 var semGrana = false;
-var atualizar = [1000,10000,20000];
+var atualizar = [1000, 10000, 20000];
 var stadiumAtual = 0;
+var temDezesseis = false;
 
-var tela = 3;
+//calendário
+var campeonatos = false;
+var peneiras = false;
+var calX = 139;
+var calY = 264;
+var semJogadores = false;
+var organizarPeneira = false;
+var quantidadeDePeneiras = 0;
+
+
+//jogadoreselenco
+
+
+var elencoX = 214;
+var elencoY = 49;
+var selPerfilX = 81;
+var selPerfilY = 306;
+var contShift = 0;
+var perfilDoJogador = false;
+var contagem = 0;
+
+//treinador
+var treinador = {
+  nome:"nenhum",
+  formacao:"4-4-2"
+}
+//Clube
+var clube = {
+  nivel:1,
+  nome:"sem nome",
+  formacao:treinador.formacao,
+}
+//Equipe técnica
+var selEquipeTecnicaX = 110;
+var selEquipeTecnicaY = 135;
+var selListaDeTreinadoresY = 142;
+var contShiftEt = 0;
+var listaDeTreinadores = false;
+var perfilDoTreinador = false;
+
+var tela = 1;
 var telaMenu = 0;
 var selX = 25;
 var selY = 30;
+var contStart = 0; //controle para que não entre em stadium antes da hora.
 
 var linha = 1;
 var coluna = 1;
 
-var W=400, H=400;
+var W = 400,
+  H = 400;
+
 function setup() {
-  createCanvas(W,H);
+  createCanvas(W, H);
+  var segundos = second();
+}
+
+function timer(){
+  segundos = second()
 }
 
 function draw() {
   background(163, 174, 191)
-  
-  if(tela == 1){
+  timer();
+  if (tela == 1) {
     logo();
-  }if(tela == 2){
+  }
+  if (tela == 2) {
     peneira();
-  }if(tela == 3){
+  }
+  if (tela == 3) {
     menu();
-  }if(telaMenu == 1){
+  }
+  if (telaMenu == 1) {
     stadium();
   }
-  text(stadiumAtual,375,400);
-  text(coluna,375,375);
-}
-
-function logo(){
-  image(logoImg,0,0);
-}
-
-function peneira(){
-  image(peneiraImg,0,0);
-}
-
-function menu(){
-  image(menuImg,0,0);
+  if (telaMenu == 2) {
+    financas();
+  }
+  if (telaMenu == 3) {
+    calendario();
+  }
+  if (telaMenu == 4) {
+    elenco();
+  }
+  if(telaMenu == 5){
+    equipeTecnica();
+  }
+  //fill(0, 0, 0)
   
-  //SELETOR
-  c = color("rgba(4, 86, 212, 0.7)");
-  fill(c);
-  noStroke();
-  rect(selX,selY,112,85,10);
-}
-
-function stadium(){
-  c = color(0,0,0)
-  fill(c)
-  image(stadiumImg,0,0);
-  textAlign(CENTER);
-  text(`proxima atualização: ${atualizar[stadiumAtual]}$ `,200,375);
-  text("SHIFT para atualizar ou ESC para sair ",200,355);
-  text(`caixa: ${caixa}$`,200,395);
-  if(semGrana){
-    textAlign(CENTER)
-    c = color(255,0,0);
-    fill(c);
-    text("GRANA INSUFICIENTE PARA PROXIMA ATUALIZAÇÃO!",200,335);
-  }
-  if(stadiumAtual == 1){
-    image(stadiumAt1,106,129);
-  }
-  if(stadiumAtual == 2){
-    image(stadiumAt2,106,129-16)
-  }
-}
-
-function keyPressed(){
-  if(keyCode == ENTER){
-    tela+=1;
-    if(tela > 3){
-      tela = 3;
-    }
-  }
+  text(selListaDeTreinadoresY,250,200);
+  //text(elencoY, 200, 250);
+  //text(meias,0,300);
+  //text(zagueiros,0,350);
   
-  if(keyCode == LEFT_ARROW && selX >25 && telaMenu === 0){
-    selX = selX - 120;
-    coluna--;
-  }
-  if(keyCode == RIGHT_ARROW && selX <2*120 && telaMenu === 0){
-    selX = selX + 120;
-    coluna++;
-  }
-  if(keyCode == UP_ARROW && selY > 30 && telaMenu === 0){
-    selY = selY - 92
-    linha--;
-  }
-  if(keyCode == DOWN_ARROW && selY < 2*92 && telaMenu === 0){
-    selY = selY + 92;
-    linha++;
-  }
-  if(linha == 1 && coluna == 1 && keyCode == ENTER && tela == 3){
-    telaMenu = 1;
-    
-  }
-  if(keyCode == ESCAPE){
-      telaMenu = 0;
-      semGrana = false;
-  }
-  if(keyCode == SHIFT && telaMenu == 1 && caixa >= atualizar[stadiumAtual]){
-    semGrana = false;
-    caixa -= atualizar[stadiumAtual];
-    console.log(caixa);
-    stadiumAtual++;
-  }
-  if(keyCode == SHIFT && telaMenu == 1 && caixa < atualizar[stadiumAtual])
-    semGrana = true;
 }
+
+//logo
+
+//peneira
+
+//menu
+
+//stadium
+
+//financas
+
+//calendario
+
+//elenco
+
+//equipeTecnica
+
+
+
+//keyPressed
